@@ -1,0 +1,54 @@
+/* reset */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* kodnings element */
+
+.grid_4col_1-1-1-1 {
+  display: grid;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  /* .grid_4col_1-1-1-1 {
+    display: grid;
+    grid-template-colummns: repeat(4, 1fr);
+    gap: 20px;
+    img {
+      align-self: stretch;
+      object-fit: cover;
+    } */
+
+  .billede1 {
+    grid-row: 1/4;
+    grid-column: span 2;
+  }
+
+  .billede2 {
+    grid-row: 1;
+    grid-column: 3/4;
+  }
+
+  .billede3 {
+    grid-row: 1;
+    grid-column: 4/5;
+  }
+
+  .billede4 {
+    grid-row: 2;
+    grid-column: 3/5;
+  }
+
+  /* img {
+    align-self: stretch;
+    object-fit: cover;
+  } */
+}
